@@ -2,7 +2,7 @@
 .quote {
     min-height: 400px;
     height: 400px;
-    background-image: url('/images/keyboard.jpg');
+    background-image: url('../../images/keyboard.jpg');
 }
 .quote:before {
     content: "";
