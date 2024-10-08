@@ -1,0 +1,148 @@
+:root {
+    --main-color: #10cbb6;
+}
+/* Start Lanidng */
+.landing {
+    min-height: 100vh;
+    background-image: url('/images/header2.jpg');
+}
+.landing:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.landing header {
+    padding: 25px 10px;
+}
+.landing header .logo {
+    color: white;
+}
+.landing header nav ul li {
+    transition: .2s;
+    color: white;
+}
+.landing header nav ul li a {
+    color: inherit;
+}
+.landing header nav ul li:not(:last-child) {
+    margin-right: 30px;
+}
+.landing header nav ul li a {
+    text-transform: uppercase;
+}
+.landing header i {
+    font-size: 30px;
+    cursor: pointer;
+}
+.landing .splide {
+    width: 90%;
+    height: fit-content;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.landing .splide .splide__slide {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.landing .splide .splide__slide h2 {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.landing .splide .splide__slide h2 span {
+    color: var(--main-color);
+}
+.landing .splide .splide__slide p {
+    font-size: 20px;
+}
+
+
+@media (min-width: 991px) {
+    .landing header i {
+        display: none;
+    }
+    .landing header nav ul li.active,
+    .landing header nav ul li:hover {
+        border-bottom: 2px solid var(--main-color);
+        color: var(--main-color);
+        padding-bottom: 7px;
+    }
+}
+
+/* End Lanidng */
+
+/* Start Resonsive */
+@media (max-width: 991px) {
+    .landing header nav {
+        position: absolute;
+        top: 120%;
+        width: 100%;
+        right: 0;
+        display: none;
+    }
+    .landing header nav.show-nav {
+        display: block;
+    }
+    .landing header nav ul {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding-top: 10px;
+        position: relative;
+    }
+    .landing header nav:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 17px;
+        border-color: transparent transparent white transparent;
+        right: 7px;
+        top: -33px;
+    }
+    .landing header nav ul li {
+        width: 100%;
+        color: black;
+        margin-bottom: 20px;
+        padding: 10px 15px;
+        text-align: center;
+    }
+    .landing header nav ul li:hover{
+        color: var(--main-color);
+    }
+    .landing .splide .splide__slide h2 {
+        font-size: 35px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+
+}
+/* Small screen */
+@media (min-width: 576px) {
+
+}
+/* Mediam screen */
+@media (min-width: 768px) {
+
+}
+/* Large screen */
+@media (min-width: 992px) {
+
+}
+/* Extra large */
+@media (min-width: 1200px) {
+
+}
+/* Extra extra large */
+@media (min-width: 1400px) {
+
+}
+/* End Resonsive */

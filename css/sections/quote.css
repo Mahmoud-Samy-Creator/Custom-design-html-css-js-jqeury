@@ -1,0 +1,66 @@
+/* Start Quote */
+.quote {
+    min-height: 400px;
+    height: 400px;
+    background-image: url('/images/keyboard.jpg');
+}
+.quote:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.quote h2 {
+    font-weight: normal;
+    margin-top: 25px;
+}
+.quote p {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+.quote span {
+    color: var(--main-color);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+
+/* Make the slider styling */
+.quote .quote-card {
+    display: none;
+}
+.quote .quote-card.active {
+    display: block;
+}
+/* End Quote */
+
+/* Start Resonsive */
+@media (max-width: 575px) {
+
+}
+/* Small screen */
+@media (min-width: 576px) {
+
+}
+/* Mediam screen */
+@media (min-width: 768px) {
+
+}
+/* Large screen */
+@media (min-width: 992px) {
+
+}
+/* Extra large */
+@media (min-width: 1200px) {
+
+}
+/* Extra extra large */
+@media (min-width: 1400px) {
+
+}
+/* End Resonsive */

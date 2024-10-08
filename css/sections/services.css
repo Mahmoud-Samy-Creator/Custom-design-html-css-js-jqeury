@@ -1,0 +1,40 @@
+/* Start Services */
+.services:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 90%;
+    background-color: #ccc;
+    margin-bottom: 20px;
+}
+.services .services-boxes {
+    padding: 40px 0;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px 30px;
+}
+.services .services-boxes .box {
+    padding: 10px;
+}
+.services .services-boxes .box .icon {
+    width: 20%;
+    min-width: 20%;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+}
+.services .services-boxes .box .icon i {
+    color: var(--main-color);
+    font-size: 55px;
+}
+.services .services-boxes .box .info span {
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.services .services-boxes .box .info p {
+    color: #444;
+}
+/* End Services */

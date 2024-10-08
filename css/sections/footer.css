@@ -1,0 +1,52 @@
+/* Start Footer */
+footer {
+    min-height: 350px;
+    max-height: fit-content;
+    background-color: rgb(44, 43, 43);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+footer .content {
+    min-height: 90%;
+    height: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+footer .content > div {
+    margin-top: 35px;
+}
+footer .content > div h3 {
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+footer .content > div.about p {
+    color: #b1b1b1;
+    width: 80%;
+    margin-bottom: 10px;
+}
+footer .content > div.about .icons i,
+footer .content > div.tags .tag {
+    padding: 10px;
+    border: 1px solid #b1b1b1;
+    color: #b1b1b1;
+    cursor: pointer;
+    margin-right: 12px;
+}
+footer .content > div.posts .posts-box .box {
+    margin-bottom: 10px;
+}
+footer .content > div.posts .posts-box .box .img {
+    margin-right: 10px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+footer .content > div.posts .posts-box .box .info span:last-child{
+    color: #b1b1b1;
+}
+footer .content > div.categories span {
+    border-bottom: 1px solid white;
+    color: #b1b1b1;
+    padding: 15px 0;
+}
+/* End Footer */
